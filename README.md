@@ -1,14 +1,16 @@
 # File Encryption and Decryption with Symmetric and Asymmetric Techniques
+<h3 align="center">Ahmed Walid</h3>
 
+## About The Project
 This project demonstrates the implementation of cryptographic principles, including file encryption and decryption using symmetric and asymmetric encryption techniques. It also explores secure key distribution and session management.
 
-## Objectives
+## Features
 
-1.  Implement file encryption and decryption using DES in CBC mode.
-2.  Develop a two-process system for file encryption and decryption.
-3.  Explore the Needham-Schroeder protocol for symmetric key distribution.
-4.  Implement RSA for public key encryption and decryption.
-5.  Use Diffie-Hellman for secure session key agreement.
+1.  Implementation of file encryption and decryption using DES in CBC mode.
+2.  Two-process system for file encryption and decryption.
+3.  Needham-Schroeder protocol for symmetric key distribution.
+4.  Implementation of RSA for public key encryption and decryption.
+5.  The use of Diffie-Hellman for secure session key agreement.
 
 ----------
 
