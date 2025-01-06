@@ -25,8 +25,16 @@ def remove_padding(text):
 
 # Encrypt a file using DES
 def encrypt_file(input_filename, output_filename):
+    
     key = os.urandom(8)  # Generate a random key of size 8 Bytes
     iv = os.urandom(8)  # Generate a random initialization vector (IV) of size 8 Bytes
+    
+    # Print key and IV in hex format
+    print("\nEncryption Details:")
+    print(f"Key (hex): {key.hex()}")
+    print(f"IV (hex):  {iv.hex()}")
+    print(f"Key (base64): {base64.b64encode(key).decode()}")
+    print(f"IV (base64):  {base64.b64encode(iv).decode()}")
     
     # Construct the input file path and read its contents as binary data
     input_file = os.path.join(INPUT_PATH, input_filename)
@@ -47,6 +55,9 @@ def encrypt_file(input_filename, output_filename):
 
 # Decrypt a file using DES
 def decrypt_file(input_filename, output_filename, key):
+    
+    print("\nDecryption Details:")
+    print(f"Using key (hex): {key.hex()}")
     # Construct the input file path and read its contents as binary data
     input_file = os.path.join(OUTPUT_PATH, input_filename)
     with open(input_file, 'rb') as f:
